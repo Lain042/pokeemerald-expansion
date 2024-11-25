@@ -892,6 +892,9 @@ LittlerootTown_EventScript_Mom::
 	end
 
 LittlerootTown_EventScript_SetReceivedRunningShoes::
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomExitThroughDoor
+	hideobjectat 4, MAP_LITTLEROOT_TOWN
+	closedoor VAR_0x8009, VAR_0x800A
 	removeobject LOCALID_MOM
 	setvar VAR_LITTLEROOT_TOWN_STATE, 4
 	release
